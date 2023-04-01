@@ -75,7 +75,7 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 // const mockArticleList = JSON.parse(JSON.stringify(mockSearchResult));
 
 // API call
-const apiURL = "https://71c652fa-5227-4849-ad61-89ded7bcd587.mock.pstmn.io";
+const apiURL = "https://3450d60a-ccde-4100-977b-4b8d6dc44c59.mock.pstmn.io";
 const getArticleListURL = apiURL + "/articles";
 
 const mainMenueDrawerWidth = 270;
@@ -405,7 +405,7 @@ function ArticleCard({ articleCardInfo, id }: ArticleCardProps) {
 
   const authors = articleCardInfo.authors.join(", ");
   const href =
-    "/article/" + articleCardInfo.id.toString().padStart(6, "0") + "/";
+    "/article/" + articleCardInfo.articleId + "/";
   const teamInfo = articleCardInfo.teams[0];
   const tracks = teamInfo.teamTracks.join(", ");
 
